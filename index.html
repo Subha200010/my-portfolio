@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+  
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+        </nav>
+        <div class="header-text">
+            <p>Web/Android developer</p>
+            <h1>Hi, I am <span>Subha Rana</span><br>from INDIA</h1>
+        </div>
+    </div>
+   </div>
+   
+ <!----about-->
+
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="image/my2.jpg">
+            </div>
+            <div class="col-2">
+             <h1 class="Style-text">About Me</h1>
+             <p>My name is Subha Rana. I am from West Bengal, India. I have completed my bachelor's degree from Bengal Institute of Technology. My strengths are that I am a hard working and self motivating person and I have problem solving skill. I am quick learner. My short term goal is to get job in reputed company and long term goal is to achieve good position like yours where I can build my career and help the organization too. That's all about me. Thank you very much</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-l" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span><i class="fa-brands fa-java"></i></span>&emsp; &emsp;&nbsp;Java</li>
+                        <li><span><i class="fa-regular fa-object-group"></i></span>&emsp;&emsp;Object-Oriented-Programming </li>
+                        <li><span><i class="fa-solid fa-laptop-code"></i></span>&emsp;&emsp;Data Structure & Algorithm </li>
+                        <li><span><i class="fa-regular fa-database"></i></span>&emsp;&emsp;&nbsp;SQL</li>
+                        <li><span><i class="fa-solid fa-database"></i></span>&emsp;&emsp;&nbsp;DBMS </li>
+                        <li><span><i class="fa-brands fa-js"></i></span>&emsp;&emsp; HTML CSS JavaScript</li>
+                        <li><span><i class="fa-solid fa-code"></i></span>&emsp;&emsp;Web and Android Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                       <li><span>2019-2023</span><br><span><i class="fa-solid fa-graduation-cap"></i></span>  B.Tech from Bengal Institute of Technology &emsp; &emsp; &emsp; &emsp;&emsp;&emsp;<span>8.17 CGPA</span></li>
+                       <li><span>2018</span><br><span><i class="fa-solid fa-school"></i></span>  Completed XII from Baishnabchak M.C High School &emsp; &emsp;&emsp;&emsp;<span>67%</span></li>
+                       <li><span>2016</span><br><span><i class="fa-solid fa-school"></i></span>  Completed X from Baishnabchak M.C High School&emsp; &emsp;&emsp;&emsp; &nbsp;&nbsp;<span>81%</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="hobbies">
+                    <ul>
+                        <li><span><i class="fa-solid fa-baseball-bat-ball"></i></span> &emsp;Playing & Watching cricket</li>
+                        <li><span><i class="fa-solid fa-globe"></i></span>&emsp; Exploring new places</li>
+                        <li><span><i class="fa-solid fa-gamepad"></i></span>&emsp; Playing Online games</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-------services-------->
+   <div id="services">
+    <div class="container">
+        <h1 class="Style-text">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-file-code"></i>
+                <h2>Frontend Development</h2>
+                <p>I created some project using html,css & JavaScript and I want learn more about new technologies and
+                    sharpen my skills on fronted technologies</p>
+                <a href="https://www.w3schools.com/howto/howto_blog_become_frontenddev.asp">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Backend Development</h2>
+                <p>Backend is the most intresting part I think because Back-end development covers server-side web application logic and integration and activities, like writing APIs, creating libraries, and working with system components instead of frontend development </p>
+                <a href="https://www.simplilearn.com/tutorials/programming-tutorial/what-is-backend-development">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Android Development</h2>
+                <p> I am just start learning android & I want to be part of an organization where I can learn more about this technologies and
+                    sharpen my skills and make a significant contribution for the growth of the industry as well
+                    as individual self</p>
+                <a href="https://developer.android.com/?gclid=CjwKCAjwzJmlBhBBEiwAEJyLuwq61nXUd8BmtiMvYYz9HJA2YyDag0iaJeY7Y8_Ge_2GwNVZDuYdhBoC9hkQAvD_BwE&gclsrc=aw.ds">Learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!---projects-->
+   <div id="project">
+    <div class="container">
+        <h1 class="Style-text">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image/p1.jpg">
+                <div class="layer">
+                    <h3>Ecommerce website</h3>
+                    <p>It was a basic project .I wanted to create an Ecommerce website for a flower decoration team with the help fo HTML &CSS</p>
+                    <a href="https://subha200010.github.io/Decoration-Ecom/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/p2.jpg">
+                <div class="layer">
+                    <h3>Chat webapp</h3>
+                    <p>In this project two or more authenticate user can chat each other in real time .For this i am using react.js,socket.io,and litte bit express.js  </p>
+                    <a href="https://github.com/Subha200010/RealTimeChatApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image/p3.jpg">
+                <div class="layer">
+                    <h3>Music player webapp</h3>
+                    <p>Here I gather some of my all time fav songs and create a web page using HTML,CSS,JavaScript and put some logics to  play,pause,forward,backward,volume buttons </p>
+                    <a href="https://subha200010.github.io/music-player-website/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Subha200010" class="btn">See More</a>
+    </div>
+   </div>
+   <!-----contact----->
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-left">
+                <h1 class="Style-text">Contact Me</h1>
+                <p><i class="fa-solid fa-at"></i>subrana000@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>(+91) 8240403253</p>
+                <p><i class="fa-solid fa-location-dot"></i><a href="https://goo.gl/maps/zgAG4U7qQLwDXYHA6" class="add">My Address(click here)</a></p>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/subha.rana.526"> <i class="fa-brands fa-facebook"></i></a>
+                   <a href="https://www.linkedin.com/in/subha-rana-2350a1211/"><i class="fa-brands fa-linkedin"></i></a>
+                   <a href="https://github.com/Subha200010"><i class="fa-brands fa-github"></i></a>
+                   <a href="https://twitter.com/SubhaRana7"><i class="fa-brands fa-twitter"></i></a>    
+                </div>
+                <a href="image/Subha's Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="col-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copy">
+        <p>Copyright © 2023, S.Rana Portfolio website </p>
+    </div>
+   </div>
+   <script>
+    var sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right="0";
+}
+function closemenu(){
+    sidemenu.style.right="-150px";
+}
+   </script>
+
+   <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyWOgp3qqQ5rCKJgQJweJo2u5GpgfnZ4-9lpVN5u3vRIOiUTLeBZlKPeNofwN7v3YhYcQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML="Message sent successfully"
+    setTimeout(function(){
+        msg.innerHTML=""
+    },3000)
+    form.reset()
+})
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
